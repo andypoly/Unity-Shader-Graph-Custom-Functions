@@ -1,4 +1,4 @@
-# UnityShaderGraphCustomFunctions
+# Unity Shader Graph Custom Functions
 Notes on using Custom Functions Nodes in Unity Shader graph
 (Unity 2022 LTS)
 
