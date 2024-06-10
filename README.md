@@ -1,10 +1,16 @@
 # Unity Shader Graph Custom Functions
-Notes on using Custom Functions Nodes in Unity Shader graph
+Notes on using Custom Functions Nodes in Unity Shader graph 
+
 (Unity 2022 LTS)
 
-Documentation is sparse! To find out what functions & variables you can use and how to read from the screen buffers, grab files like Functions.hlsl and ShaderVariables.hlsl from in Packages\Shader Graph\ShaderGraphLibrary.
+Custom Function Node Documentation: https://docs.unity3d.com/Packages/com.unity.shadergraph@14.0/manual/Custom-Function-Node.html
 
-You can sample Depth, Color and Normal if you have them enabled (pass Screen Position into your function from the graph). 
+Documentation for writing the code is sparse! To find out what functions & variables you can use and how to read from the screen buffers, grab files like Functions.hlsl and ShaderVariables.hlsl from in Packages\Shader Graph\ShaderGraphLibrary.
+
+# Fullscreen shader graphs 
+https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/post-processing/post-processing-custom-effect-low-code.html
+
+You can sample Depth, Color and Normal if you have them enabled. Pass Screen Position into your custom function node from the graph. 
 
 SHADERGRAPH_SAMPLE_SCENE_DEPTH(uv);
 
