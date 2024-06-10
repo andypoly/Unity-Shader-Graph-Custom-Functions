@@ -14,7 +14,7 @@ You can sample Depth, Color and Normal if you have them enabled. Pass Screen Pos
 
 SHADERGRAPH_SAMPLE_SCENE_DEPTH(uv);
 
-SHADERGRAPH_SAMPLE_SCENE_COLOR(uv);
+SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); But this is actually quite broken, it is best to read the scene color in the graph and pass it in for complicated reasons...
 
 SHADERGRAPH_SAMPLE_SCENE_NORMAL(uv);
 
