@@ -10,7 +10,7 @@ Documentation for writing the code is sparse! To find out what functions & varia
 # Fullscreen shader graphs 
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/post-processing/post-processing-custom-effect-low-code.html
 
-You can sample Depth, Color and Normal if you have them enabled. Pass Screen Position into your custom function node from the graph. 
+You can sample Depth, Color and Normal if you have them enabled (Set the requirements in your FullScreenPassRendererFeature). Pass Screen Position into your custom function node from the graph. 
 
 SHADERGRAPH_SAMPLE_SCENE_DEPTH(uv);
 
