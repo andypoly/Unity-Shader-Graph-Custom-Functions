@@ -3,6 +3,8 @@ Notes on using Custom Function Nodes in Unity Shader graph
 
 (Unity 2022 LTS)
 
+To see see a fullscreen Shader Graph effect to do outlines - download the unity package here.
+
 Custom Function Node Documentation: https://docs.unity3d.com/Packages/com.unity.shadergraph@14.0/manual/Custom-Function-Node.html
 
 Documentation for writing the code is sparse! To find out what functions & variables you can use and how to read from the screen buffers, grab files like Functions.hlsl and ShaderVariables.hlsl from in Packages\Shader Graph\ShaderGraphLibrary. To see the actual code for say URP - view the ShaderLibrary folder under the Universal RP package.
@@ -13,9 +15,9 @@ https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manu
 You can sample Depth, Color and Normal if you have them enabled (Set the requirements in your FullScreenPassRendererFeature). Pass Screen Position into your custom function node from the graph. 
 
 SHADERGRAPH_SAMPLE_SCENE_DEPTH(uv);
-But the depth is different under different graphics APIs so you should check out common.hlsl to handle it.
+But the depth is different under different graphics APIs so you should check out common.hlsl to handle it! An orthographic Camera just needs z values flipping #if defined(UNITY_REVERSED_Z)  A normal camera should convert depth to 'LinearEyeDepth'.
 
-SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); But this is actually quite broken. Currently it will only work if you have a Scene Color Node used in your graph.
+SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); But this is actually quite broken! Currently it will only work if you have a Scene Color Node used in your graph!
 
 SHADERGRAPH_SAMPLE_SCENE_NORMAL(uv);
 
