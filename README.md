@@ -1,9 +1,9 @@
-# Unity Shader Graph Custom Functions
+# Unity Shader Graph Custom Functions (URP focused)
 Notes on using Custom Function Nodes in Unity Shader graph 
 
 (Unity 2022 LTS)
 
-To see see a fullscreen Shader Graph effect to do outlines - download the unity package here.
+To see see a fullscreen Shader Graph effect to do URP outlines & using a custom function node - download the unity package here.
 
 Custom Function Node Documentation: https://docs.unity3d.com/Packages/com.unity.shadergraph@14.0/manual/Custom-Function-Node.html
 
