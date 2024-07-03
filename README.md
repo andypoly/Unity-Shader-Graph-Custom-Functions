@@ -14,10 +14,15 @@ https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manu
 
 You can sample Depth, Color and Normal if you have them enabled (Set the requirements in your FullScreenPassRendererFeature). Pass Screen Position into your custom function node from the graph. 
 
+Reading from screen buffers:
+
 SHADERGRAPH_SAMPLE_SCENE_DEPTH(uv);
+
 But the depth is different under different graphics APIs so you should check out common.hlsl to handle it! An orthographic Camera just needs z values flipping #if defined(UNITY_REVERSED_Z)  A normal camera should convert depth to 'LinearEyeDepth'.
 
-SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); But this is actually quite broken! Currently it will only work if you have a Scene Color Node used in your graph!
+SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); 
+
+Currently this will only work if you have a Scene Color Node used in your graph!
 
 SHADERGRAPH_SAMPLE_SCENE_NORMAL(uv);
 
