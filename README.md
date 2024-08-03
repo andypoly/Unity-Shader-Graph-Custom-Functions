@@ -22,7 +22,7 @@ But the depth is different under different graphics APIs so you should check out
 
 SHADERGRAPH_SAMPLE_SCENE_COLOR(uv); 
 
-Currently this will only work if you have a Scene Color Node used in your graph!
+Currently this will only work if you have a Scene Color Node used in your graph! But as pointed out by https://github.com/smitdylan2001 you can add a keyword bool to your blackboard with the reference value as "REQUIRE_OPAQUE_TEXTURE" and default it to true. This will make it work as an alternative!!
 
 SHADERGRAPH_SAMPLE_SCENE_NORMAL(uv);
 
