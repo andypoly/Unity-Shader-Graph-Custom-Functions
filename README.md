@@ -9,6 +9,8 @@ Custom Function Node Documentation: https://docs.unity3d.com/Packages/com.unity.
 
 Documentation for writing the code is sparse! To find out what functions & variables you can use and how to read from the screen buffers, grab files like Functions.hlsl and ShaderVariables.hlsl from in Packages\Shader Graph\ShaderGraphLibrary. To see the actual code for say URP - view the ShaderLibrary folder under the Universal RP package.
 
+Custom lighting currently is not supported out of the box in URP but aside from editing the URP package itself you can build a custom shader graph and do your own lighting if you use techniques such as those here: https://github.com/Cyanilux/URP_ShaderGraphCustomLighting
+
 # Fullscreen shader graphs 
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/post-processing/post-processing-custom-effect-low-code.html
 
